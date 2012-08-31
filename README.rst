@@ -55,7 +55,7 @@ and comment out the postgres relates parts.
 
 Now you must create the db and the admin user::
 
-$ export FLASK_BLOG_SETTINGS="<YOUR_BUILDOUT_DIRECTORY>/etc/config.py" 
+$ export ASSENTIO_SETTINGS="<YOUR_BUILDOUT_DIRECTORY>/etc/config.py"
 $ bin/supervisordd # starts the db and gunicorn
 $ bin/manage syncdb
 $ bin/manage adduser <ADMIN_USERNAME> <ADMIN_PASSWORD>
