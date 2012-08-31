@@ -3,4 +3,4 @@
 export FLASK_BLOG_SETTINGS="${buildout:directory}/etc/config.py"
 
 ARGS="-c ${config:etc_directory}/gunicorn.conf.py"
-${buildout:bin-directory}/gunicorn $ARGS $@ flask.blog:app 
+${buildout:bin-directory}/gunicorn $ARGS $@ assentio:app
