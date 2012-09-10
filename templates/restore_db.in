@@ -1,0 +1,7 @@
+#!/bin/sh
+
+${postgresql:location}/bin/dropdb ${config:postgres.database}
+${postgresql:location}/bin/createdb --owner=${config:postgres.user} ${config:postgres.database}
+${postgresql:location}/bin/pg_restore -d ${config:postgres.database} < $1
+
+
