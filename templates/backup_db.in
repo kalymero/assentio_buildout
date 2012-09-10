@@ -1,0 +1,5 @@
+#!/bin/sh
+
+${postgresql:location}/bin/pg_dump -F c -f ${buildout:directory}/var/backup/backup.sql ${config:postgres.database}
+
+
